@@ -1,0 +1,134 @@
+html{
+  font-family: Roboto, Arial;
+  scroll-behavior: smooth;
+  background-color: rgb(255, 248, 240);
+}
+
+h1{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header{
+  background-color: rgb(157, 217, 210);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  left: -5px;
+  right: -5px;
+  top: -3px;
+  z-index: 100;
+  border-radius: 15px;
+}
+
+.header-name{
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: rgb(255, 136, 17);
+  padding: 8px;
+  border-radius: 23px;
+
+}
+
+.right-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 450px;
+  margin-right: 20px;
+}
+
+.right-section-button{
+  background-color: rgb(255, 136, 17);
+  padding: 6px;
+  border-radius: 16px;
+}
+
+
+.main{
+  margin-top: 80px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.project-grid, .design-team-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media (max-width: 1000px) {
+  .project-grid{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1500px){
+  .project-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.project{
+  width: 100%;
+  text-align: center;
+}
+
+.project-photo{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-title{
+  text-align: center;
+}
+
+.about-me-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-photo{
+  height: 200px;
+  margin-left: 25%;
+}
+
+.contact-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10px;
+
+  
+}
+
+.contact-image{
+  height: 60px;
+}
+
+.contact-link{
+  text-align: center;
+}
