@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 html{
-  font-family: Roboto, Arial;
+  font-family: Inter;
   scroll-behavior: smooth;
   background-color: rgb(255, 248, 240);
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg);
+  color: #fff;
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
+  margin:0px;
 }
 
 h1{
@@ -17,28 +28,31 @@ a{
 }
 
 .header{
-  background-color: rgb(157, 217, 210);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 60px;
   align-items: center;
   position: fixed;
-  left: -5px;
-  right: -5px;
-  top: -3px;
+  left: 0%;
+  right: 0px;
+  top: 0px;
   z-index: 100;
-  border-radius: 15px;
 }
 
 .header-name{
   margin-left: 20px;
-  font-size: 25px;
-  font-weight: 500;
-  background-color: rgb(255, 136, 17);
-  padding: 8px;
-  border-radius: 23px;
+  padding: 6px;
+  border-radius: 16px;
+  border-width: 2px;
+  border-color: white;
+  border: solid;
+  background-color: black;
+}
 
+.header-text{
+  color:white;
+  font-size: 16px;
 }
 
 .right-section{
@@ -46,12 +60,14 @@ a{
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 450px;
+  width: 400px;
   margin-right: 20px;
 }
 
 .right-section-button{
-  background-color: rgb(255, 136, 17);
+  border-color: white;
+  border: solid;
+  background-color: black;
   padding: 6px;
   border-radius: 16px;
 }
@@ -91,7 +107,11 @@ a{
 
 .project-photo{
   width: 100%;
+  object-fit: cover;
   border-radius: 10px;
+  border: solid;
+  border-color: lightgray;
+  border-width: 2px;
 }
 
 .project-title{
@@ -110,8 +130,13 @@ a{
 }
 
 .about-me-photo{
-  height: 200px;
+  width: 70%;
   margin-left: 25%;
+  border: solid;
+  border-color: lightgray;
+  border-width: 2px;;
+  border-radius: 5px;
+
 }
 
 .contact-section{
@@ -127,8 +152,13 @@ a{
 
 .contact-image{
   height: 60px;
+  border: solid;
+  border-color: white;
+  border-width: 2px;;
+  border-radius: 5px;
 }
 
 .contact-link{
   text-align: center;
+  color: white;
 }

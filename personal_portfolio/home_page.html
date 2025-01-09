@@ -6,10 +6,8 @@
     </title>
 
     <!-- Imports fonts and style-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href = "styles\home_page.css"> 
+    <link rel = "stylesheet" href = "styles/title.css">
   </head>
   
 
@@ -17,63 +15,77 @@
     <a id = "top"></a>
     <header class = "header">
       <div class = "header-name">
-        <a href = "#top">
+        <a class = "header-text" href = "#top">
           Cameron Huang
         </a>
       </div>
 
       <div class = "right-section">
         <div class = "right-section-button">
-          <a href = "#projects-portfolio">
-            Portfolio/Projects
+          <a class = "header-text" href = "#projects-portfolio">
+            Projects
           </a>
         </div>
         <div class = "right-section-button">
-          <a href = "#design-team">
+          <a class = "header-text" href = "#design-team">
             Design Teams
           </a>
         </div>
         <div class = "right-section-button">
-          <a href = "#about-me">
+          <a class = "header-text" href = "#about-me">
             About Me
           </a>
         </div>
         <div class = "right-section-button">
-          <a href = "#contact">
+          <a class = "header-text" href = "#contact">
             Contact
           </a>
         </div>
       </div>
     </header>
 
+    <section class = "title">
+      <div class="content">
+        <h1 class="title">Cameron Huang
+          <div class="aurora">
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+          </div>
+        </h1>
+        <p class="subtitle">Welcome to my website!!!</p>
+      </div>
+    </section>
+
     <section class = "main">
       <h1 id = "projects-portfolio">
-        Portfolio/Projects
+        Projects
       </h1>
 
       <div class = "project-grid">
         <div class = "project">
-          <img class = "project-photo" src = "images/my_channel.jpg">
+          <img class = "project-photo" src = "images/home_page/softmax-regression.png">
           <p class = "project-title">
-            Project 1
+            Learning Deep-Learning
           </p>
         </div>
         <div class = "project">
-          <img class = "project-photo" src = "images/my_channel.jpg">
+          <img class = "project-photo" src = "images/home_page/personal-website.png">
           <p class = "project-title">
-            Project 2
+            Learning Web-Development
           </p>
         </div>
         <div class = "project">
-          <img class = "project-photo" src = "images/my_channel.jpg">
+          <img class = "project-photo" src = "images/home_page/data-science.png">
           <p class = "project-title">
-            Project 3
+            Data Science Projects
           </p>
         </div>
         <div class = "project">
-          <img class = "project-photo" src = "images/my_channel.jpg">
+          <img class = "project-photo" src = "images/home_page/ssp_simulation.gif">
           <p class = "project-title">
-            Project 4
+            Asteroid Orbital Determination and Simulation
           </p>
         </div>
       </div>
@@ -85,21 +97,21 @@
 
       <div class = "design-team-grid">
         <div class = "project">
-          <img class = "project-photo" src = "images/my_channel.jpg">
+          <img class = "project-photo" src = "images/home_page/rice-robotics.avif">
           <p class = "project-title">
-            Rice Robotics Lunar Rover
+            Rice Robotics Lunar Rover Software
           </p>
         </div>
         <div class = "project">
-          <img class = "project-photo" src = "images/my_channel.jpg">
+          <img class = "project-photo" src = "images/home_page/nasa-suits.webp">
           <p class = "project-title">
-            NASA SUITS - AR/VR
+            NASA SUITS - Rice AR/VR
           </p>
         </div>
         <div class = "project">
-          <img class = "project-photo" src = "images/my_channel.jpg">
+          <img class = "project-photo" src = "images/home_page/eclipse.jpg">
           <p class = "project-title">
-            Rice Eclipse
+            Rice Eclipse - Payload Avionics
           </p>
         </div>
       </div>
@@ -112,10 +124,17 @@
       <div class = "about-me-grid">
         <div class = "about-me-writing">
           <p>
-            Hi there! My name is cameron huang and i am the goat. Hi there! My name is cameron huang and i am the goat.Hi there! My name is cameron huang and i am the goat.Hi there! My name is cameron huang and i am the goat.Hi there! My name is cameron huang and i am the goat.Hi there! My name is cameron huang and i am the goat.Hi there! My name is cameron huang and i am the goat.
+            Hello!! Thanks for visiting my website!</br> </br>  My name is Cameron Huang and I'm a freshman studying 
+            computer science at Rice University with a minor in either statistics or operations research. This 
+            website marks the beginning of my journey towards learning full stack web development and I'm excited
+            to see it evolve throughout the next couple of years. Currently, I'm interested in exploring all of the 
+            different applications and unique subjects within computer science. In addition to web development, I am
+            am  exploring AI/ML through self teaching myself UC Berkley's CS182 (check out the deep learning project),
+            robotics (check out the rice robotics design team!), and virtual reality (check out the NASA-Suits AR/VR design team)!
+             Please feel free to contact me below and I hope to see you again! Bye!!!
           </p>
         </div>
-        <img class = "about-me-photo" src="images/my_channel.jpg">
+        <img class = "about-me-photo" src="images/home_page/selfie.png">
       </div>
 
 
@@ -126,19 +145,24 @@
       </h1>
       <div class = "contact-section">
         <a class = "contact-link" href = "https://www.linkedin.com/in/cameron-huang-b50abb250", target = "_blank">
-          <img class = "contact-image" src = "images/linkedin-icon.png">
+          <img class = "contact-image" src = "images/home_page/linkedin-dark.jpg">
           <p>
             LinkedIn
           </p>
         </a>
+        <a class = "contact-link" href = "https://github.com/CamH123", target = "_blank">
+          <img class = "contact-image" src = "images/home_page/git-hub-icon.png">
+          <p> GitHub </p>
+        </a>
         <a class = "contact-link" href = "mailto:cameron.h.1732@gmail.com", target = "_blank">
-          <img class = "contact-image" src = "images/email_icon.jpg">
+          <img class = "contact-image" src = "images/home_page/gmail-icon.webp">
           <p> Email</p>
         </a>
         <a class = "contact-link" href = "Cameron Huang Resume - 2024.pdf", target = "_blank">
-          <img class = "contact-image" src = "images/resume_icon.png">
+          <img class = "contact-image" src = "images/home_page/resume_icon.png">
           <p> Resume</p>
         </a>
+
       </div>
       
     </section>
