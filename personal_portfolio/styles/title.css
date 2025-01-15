@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
-:root {
+html {
   --bg: #000000;
   --clr-1: #00c2ff;
   --clr-2: #33ff8c;
@@ -32,6 +32,7 @@
   background: var(--bg);
   margin: 0;
   margin-top: 100px;
+  cursor: default;
 }
 
 .subtitle {

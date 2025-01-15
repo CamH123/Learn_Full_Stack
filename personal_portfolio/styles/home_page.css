@@ -24,7 +24,6 @@ h1{
 
 a{
   text-decoration: none;
-  color: black;
 }
 
 .header{
@@ -72,11 +71,16 @@ a{
   border-radius: 16px;
 }
 
+.header-name:hover, .right-section-button:hover{
+  background-color: rgb(77, 77, 77);
+}
+
 
 .main{
   margin-top: 80px;
   margin-left: 5%;
   margin-right: 5%;
+  cursor: default;
 }
 
 .project-grid, .design-team-grid{
@@ -103,6 +107,7 @@ a{
 .project{
   width: 100%;
   text-align: center;
+  color: white;
 }
 
 .project-photo{
@@ -116,6 +121,17 @@ a{
 
 .project-title{
   text-align: center;
+  color: white;
+}
+
+.project-link{
+  color: lightgray;
+}
+.project-link:hover{
+  border-color: lightgray;
+  border: solid;
+  border-width: 2px;
+  border-radius: 14px;
 }
 
 .about-me-grid{
