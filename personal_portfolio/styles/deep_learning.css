@@ -75,6 +75,7 @@ h2{
 
 .project-grid{
   margin-top: 60px;
+
 }
 
 .project{
@@ -89,6 +90,8 @@ h2{
   grid-template-columns: 1fr 1fr;
   column-gap: 25px;
   row-gap: 25px;
+  justify-content: center;
+  align-items: center;
 }
 .project-picture{
   width: 100%;
@@ -96,5 +99,6 @@ h2{
   border-width: 2px;
   border-color: lightgray;
   border-radius: 5px;
+
 }
 

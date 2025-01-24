@@ -82,13 +82,22 @@ a{
   cursor: default;
 }
 
-.project-grid, .design-team-grid{
+.project-grid{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
   row-gap: 40px;
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.design-team-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 @media (max-width: 1000px) {
